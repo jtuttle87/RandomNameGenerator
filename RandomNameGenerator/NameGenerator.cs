@@ -22,7 +22,7 @@ namespace RandomNameGenerator
 
         private static void SetupLastName()
         {
-            aFile = new FileStream("lastnames.csv", FileMode.Open);
+            aFile = new FileStream("../../../packages/RandomNameGenerator.1.0.2/lastnames.csv", FileMode.Open);
             sr = new StreamReader(aFile, true);
             while (sr.Peek() >0 )
             {
@@ -32,7 +32,7 @@ namespace RandomNameGenerator
 
         private static void SetupDudes()
         {
-            aFile = new FileStream("dudes.csv", FileMode.Open);
+            aFile = new FileStream("../../../packages/RandomNameGenerator.1.0.2/dudes.csv", FileMode.Open);
             sr = new StreamReader(aFile, true);
             while (sr.Peek() > 0)
             {
@@ -42,7 +42,7 @@ namespace RandomNameGenerator
 
         private static void SetupLadies()
         {
-            aFile = new FileStream("ladies.csv", FileMode.Open);
+            aFile = new FileStream("../../../packages/RandomNameGenerator.1.0.2/ladies.csv", FileMode.Open);
             sr = new StreamReader(aFile, true);
             while (sr.Peek() > 0)
             {
